@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/leftFactor"
+        android:layout_alignRight="@+id/leftFactor"
+        android:layout_marginBottom="62dp"
+        android:src="@drawable/times"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/rightFactor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/times"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/six"
+        android:visibility="invisible" />
+    <!-- android:visibility="invisible" -->
+
+    <ImageView
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="160dp"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/dbg_ok" />
+
+    <ImageView
+        android:id="@+id/scale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="130dp"
+        android:src="@drawable/scale_iiii" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="22dp"
+        android:src="@drawable/arrow"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/leftFactor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/arrow"
+        android:src="@drawable/five"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/equals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/leftFactor"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/times"
+        android:src="@drawable/equals"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/answerLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="65dp"
+        android:layout_toRightOf="@+id/leftFactor"
+        android:src="@drawable/five"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/answerRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/rightFactor"
+        android:src="@drawable/six"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/dragX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/scale"
+        android:layout_alignLeft="@+id/arrow"
+        android:text="" />
+
+       <ImageView
+        android:id="@+id/happyC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/times"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/happy_c" />
+    
+        
+    <LinearLayout
+        android:id="@+id/linearContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+
+        <ImageView
+            android:id="@+id/okStaple"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/happy_a"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+</RelativeLayout>
